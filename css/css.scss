@@ -6,15 +6,15 @@
 
 
 @for $i from 1 through 10 {
-  .block-#{$i} { width: 60* $i; }
+  .block-#{$i} { left: $i*60px; }
 }
 
 .block-1{
- // width:70px;
+ width:70px;
   height:70px;
-  background-color:aqua;
+  //background-color:aqua;
   position:absolute;
-  left:0px;
+  //left:0px;
 
   .up {
   background-color:blue;
@@ -52,11 +52,11 @@
 }
 
 .block-2{
-//  width:70px;
+ width:70px;
   height:70px;
-  background-color:grey;
+  //background-color:grey;
   position:absolute;
-  left:60px;
+  //left:60px;
 
   .up {
   background-color:blue;
@@ -88,11 +88,270 @@
 }
 
 .block-3{
-
+  width: 70px;
   height:70px;
-  background-color:green;
+  //background-color:green;
   position:absolute;
-  left:120px;
+  //left:120px;
+
+  .up {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+}
+
+
+.down {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+  top:60px;
+}
+.right {
+  background-color:red;
+  width:10px;
+  height:50px;
+  position: absolute;
+  left:60px;
+  top:10px;
+}
+}
+
+
+.block-4{
+  width: 70px;
+  height:70px;
+  //background-color:green;
+  position:absolute;
+  //left:120px;
+
+  .up {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+}
+
+
+.down {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+  top:60px;
+}
+.right {
+  background-color:red;
+  width:10px;
+  height:50px;
+  position: absolute;
+  left:60px;
+  top:10px;
+}
+}
+
+.block-5{
+  width: 70px;
+  height:70px;
+  //background-color:green;
+  position:absolute;
+  //left:120px;
+
+  .up {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+}
+
+
+.down {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+  top:60px;
+}
+.right {
+  background-color:red;
+  width:10px;
+  height:50px;
+  position: absolute;
+  left:60px;
+  top:10px;
+}
+}
+
+
+.block-6{
+  width: 70px;
+  height:70px;
+  //background-color:green;
+  position:absolute;
+  //left:120px;
+
+  .up {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+}
+
+
+.down {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+  top:60px;
+}
+.right {
+  background-color:red;
+  width:10px;
+  height:50px;
+  position: absolute;
+  left:60px;
+  top:10px;
+}
+}
+
+
+
+.block-7{
+  width: 70px;
+  height:70px;
+  //background-color:green;
+  position:absolute;
+  //left:120px;
+
+  .up {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+}
+
+
+.down {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+  top:60px;
+}
+.right {
+  background-color:red;
+  width:10px;
+  height:50px;
+  position: absolute;
+  left:60px;
+  top:10px;
+}
+}
+
+
+.block-8{
+  width: 70px;
+  height:70px;
+  //background-color:green;
+  position:absolute;
+  //left:120px;
+
+  .up {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+}
+
+
+.down {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+  top:60px;
+}
+.right {
+  background-color:red;
+  width:10px;
+  height:50px;
+  position: absolute;
+  left:60px;
+  top:10px;
+}
+}
+
+
+.block-9{
+  width: 70px;
+  height:70px;
+  //background-color:green;
+  position:absolute;
+  //left:120px;
+
+  .up {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+}
+
+
+.down {
+  background-color:blue;
+  width:50px;
+  height:10px;
+  position: absolute;
+  left:10px;
+  z-index:1;
+  top:60px;
+}
+.right {
+  background-color:red;
+  width:10px;
+  height:50px;
+  position: absolute;
+  left:60px;
+  top:10px;
+}
+}
+
+
+.block-10{
+  width: 70px;
+  height:70px;
+  //background-color:green;
+  position:absolute;
+  //left:120px;
 
   .up {
   background-color:blue;
