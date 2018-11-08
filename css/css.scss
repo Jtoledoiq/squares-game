@@ -4,380 +4,47 @@
   padding:0px;
 }
 
+$h:10px;
+$v: 50px;
+$size: $v+2*$h;
 
-@for $i from 1 through 10 {
-  .block-#{$i} { left: $i*60px; }
-}
-
-.block-1{
- width:70px;
-  height:70px;
-  //background-color:aqua;
-  position:absolute;
-  //left:0px;
-
-  .up {
+.down{
   background-color:blue;
-  width:50px;
-  height:10px;
+  width:$v;
+  height:$h;
   position: absolute;
-  left:10px;
+  left:$h;
   z-index:1;
+  top:$h+$v;
 }
-.left {
+.right{
   background-color:red;
-  width:10px;
-  height:50px;
+  width:$h;
+  height:$v;
   position: absolute;
-  top:10px;
+  left:$h+$v;
+  top:$h;
 }
-
-.down {
+.up{
   background-color:blue;
-  width:50px;
-  height:10px;
+  width:$v;
+  height:$h;
   position: absolute;
-  left:10px;
+  left:$h;
   z-index:1;
-  top:60px;
 }
-.right {
+.left{
   background-color:red;
-  width:10px;
-  height:50px;
+  width:$h;
+  height:$v;
   position: absolute;
-  left:60px;
-  top:10px;
-}
+  top:$h;
 }
 
-.block-2{
- width:70px;
-  height:70px;
-  //background-color:grey;
-  position:absolute;
-  //left:60px;
-
-  .up {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
+h1{
+  margin:10px;
 }
 
-
-.down {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-  top:60px;
-}
-.right {
-  background-color:red;
-  width:10px;
-  height:50px;
-  position: absolute;
-  left:60px;
-  top:10px;
-}
-}
-
-.block-3{
-  width: 70px;
-  height:70px;
-  //background-color:green;
-  position:absolute;
-  //left:120px;
-
-  .up {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-}
-
-
-.down {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-  top:60px;
-}
-.right {
-  background-color:red;
-  width:10px;
-  height:50px;
-  position: absolute;
-  left:60px;
-  top:10px;
-}
-}
-
-
-.block-4{
-  width: 70px;
-  height:70px;
-  //background-color:green;
-  position:absolute;
-  //left:120px;
-
-  .up {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-}
-
-
-.down {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-  top:60px;
-}
-.right {
-  background-color:red;
-  width:10px;
-  height:50px;
-  position: absolute;
-  left:60px;
-  top:10px;
-}
-}
-
-.block-5{
-  width: 70px;
-  height:70px;
-  //background-color:green;
-  position:absolute;
-  //left:120px;
-
-  .up {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-}
-
-
-.down {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-  top:60px;
-}
-.right {
-  background-color:red;
-  width:10px;
-  height:50px;
-  position: absolute;
-  left:60px;
-  top:10px;
-}
-}
-
-
-.block-6{
-  width: 70px;
-  height:70px;
-  //background-color:green;
-  position:absolute;
-  //left:120px;
-
-  .up {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-}
-
-
-.down {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-  top:60px;
-}
-.right {
-  background-color:red;
-  width:10px;
-  height:50px;
-  position: absolute;
-  left:60px;
-  top:10px;
-}
-}
-
-
-
-.block-7{
-  width: 70px;
-  height:70px;
-  //background-color:green;
-  position:absolute;
-  //left:120px;
-
-  .up {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-}
-
-
-.down {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-  top:60px;
-}
-.right {
-  background-color:red;
-  width:10px;
-  height:50px;
-  position: absolute;
-  left:60px;
-  top:10px;
-}
-}
-
-
-.block-8{
-  width: 70px;
-  height:70px;
-  //background-color:green;
-  position:absolute;
-  //left:120px;
-
-  .up {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-}
-
-
-.down {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-  top:60px;
-}
-.right {
-  background-color:red;
-  width:10px;
-  height:50px;
-  position: absolute;
-  left:60px;
-  top:10px;
-}
-}
-
-
-.block-9{
-  width: 70px;
-  height:70px;
-  //background-color:green;
-  position:absolute;
-  //left:120px;
-
-  .up {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-}
-
-
-.down {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-  top:60px;
-}
-.right {
-  background-color:red;
-  width:10px;
-  height:50px;
-  position: absolute;
-  left:60px;
-  top:10px;
-}
-}
-
-
-.block-10{
-  width: 70px;
-  height:70px;
-  //background-color:green;
-  position:absolute;
-  //left:120px;
-
-  .up {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-}
-
-
-.down {
-  background-color:blue;
-  width:50px;
-  height:10px;
-  position: absolute;
-  left:10px;
-  z-index:1;
-  top:60px;
-}
-.right {
-  background-color:red;
-  width:10px;
-  height:50px;
-  position: absolute;
-  left:60px;
-  top:10px;
-}
+#container {
+  margin:0;
 }
