@@ -6,15 +6,18 @@
     <link rel="stylesheet" href="css/css.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
-  <body>
-    <h1>Squares game</h1>
-    <div id="container"></div>
+  <body><h1>Squares game</h1>
+<div id="container" class="hola"></div>
 
-<script type="text/javascript">
-$(document).ready(function(){
-var num=6;
+    <script src="anime.min.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function(){
+var num=3;
 var v=10;
 var h=50;
+
+
  //first square
 $("#container").append(` <div style="left:0px" class="block-11">
 <div class="up"> </div>
@@ -58,18 +61,49 @@ $("#container").append(`<div style="top:${i*v+i*h-v-h}px; left:${j*v+j*h-v-h}px"
 
      $(`.block-${i}${j}`).css("position", "absolute");
 
-}
-
 
 }
 
+}
 
 
+for (var k=1; k<=num; k++) {
+  $(`.block-1${k} .up`).addClass("black");
+  $(`.block-${num}${k} .down`).addClass("black");
+  $(`.block-${k}1 .left`).addClass("black");
+  $(`.block-${k}${num} .right`).addClass("black");
+}
 
-//rest of the elements
 
+ $(".block-11 .down").click(function() {
 
+  console.log(this);
+   //$(`.block-11 .down`).addClass("blue")
+
+   var basicTimeline = anime.timeline();
+
+basicTimeline
+  .add({
+    targets: '.block-11 .down',
+    scale: 2,
+  duration: 1000,
+  easing: 'easeInOutQuart'
+  })
+  .add({
+    targets: '.block-11 .down',
+   scale: 1,
+   backgroundColor: '#0000ff',
+  duration: 1000,
+  easing: 'easeInOutQuart'
+  })
+  .add({
+    targets: '.block-11 .down',
+    scale: 1,
+  duration: 1000,
+  easing: 'easeInOutQuart'
   });
-</script>
+});
+});
+    </script>
   </body>
 </html>
