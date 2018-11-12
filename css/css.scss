@@ -1,13 +1,15 @@
 
+
 *{
   margin:0px;
   padding:0px;
 }
 
-$h:10px;
+$h:8px;
 $v: 50px;
 $size: $v+2*$h;
-
+$bottom: $v;
+$border-radius:0px;
 .down{
   background-color:lightgrey;
   width:$v;
@@ -16,14 +18,17 @@ $size: $v+2*$h;
   left:$h;
   z-index:1;
   top:$h+$v;
+  border-radius:$border-radius;
 }
 .right{
-  background-color:lightgrey;;
+  background-color:lightgrey;
   width:$h;
   height:$v;
   position: absolute;
   left:$h+$v;
   top:$h;
+  z-index:1;
+  border-radius:$border-radius;
 }
 .up{
   background-color:lightgrey;;
@@ -31,7 +36,7 @@ $size: $v+2*$h;
   height:$h;
   position: absolute;
   left:$h;
-  z-index:1;
+  border-radius:$border-radius;
 }
 .left{
   background-color:lightgrey;;
@@ -39,6 +44,16 @@ $size: $v+2*$h;
   height:$v;
   position: absolute;
   top:$h;
+ border-radius:$border-radius;
+}
+.bottom {
+  position: absolute;
+  width:$bottom;
+  height:$bottom;
+  background-color:#e6e6ff;
+  left:$h;
+  top:$h;
+  border-radius:$border-radius;
 }
 
 .black {background-color:black}
@@ -56,7 +71,7 @@ h1{
   margin:10px;
 }
 
-.hola{
+#container{
   position:relative;
   right:10%;
 }
